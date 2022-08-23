@@ -1,0 +1,11 @@
+Banco Salgado do Anderson
+
+
+
+insert into aluno (periodo, curso, professor) values ('Manhã', 'Recursos Humanos', 'Luis Fernando' );
+
+insert into aluno (periodo, curso, professor) values ('Noite', 'Adiministração', 'Fabio Santos' );
+
+insert into aluno (periodo, curso, professor) values ('Noite', 'Adiministração', 'Fabio Santos');
+
+insert into aluno (periodo, curso, professor) values ('Tarde', 'Tecnico em Informatica', 'José Afranio')

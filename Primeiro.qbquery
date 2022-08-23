@@ -1,0 +1,16 @@
+﻿use barbearia;
+desc cliente;
+insert into cliente (nome, telefone)values ('José Afranio', 982964018);
+
+insert into cliente (nome, telefone)values ('Maria Clara', 982964019);
+
+insert into cliente (nome, telefone)values ('Laura Cristina', 997225134);
+
+insert into cliente (nome, telefone)values ('Pedro', 987654348);
+
+
+select * from cliente;
+
+Delete from cliente where idcliente = 5;
+
+Update cliente set nome = 'Junior Soares' where idcliente = 1;

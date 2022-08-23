@@ -1,0 +1,104 @@
+// acessar o mysql
+
+mysql -u root -p
+
+// criar database/schema
+
+create database alunos;
+
+use alunos;
+
+// comando de criação da tabela
+
+create table aluno (
+idAluno int not null auto_increment,
+nome varchar(50) not null,
+telefone decimal not null,
+email varchar(50) not null,
+Primary Key (idAluno)
+); 
+
+// verificar estrutura da criação da tabela
+
+describe aluno;
+
+// listar tabelas
+
+show tables;
+
+-INSERIR------------------------------------------------------------------------------------------------
+
+//comandos de inserção
+
+insert into aluno (nome, telefone, email) 
+values ("José Afranio", 982964018, "zevolpato@gmail.com" );
+
+insert into aluno (nome, telefone, email) 
+values ("Maria Clara", 982964019", "mariaclara@gmail.com" );
+
+insert into aluno (nome, telefone, email) 
+values ("Laura Cristina", 997225134, "laura@gmail.com");
+
+insert into aluno (idAluno, nome, telefone, email) 
+values (100, "Pedro", 9876543, "pedro@gmail.com")
+
+-SELECIONAR------------------------------------------
+// comando para visualizar mostra todos os campos  *
+
+select * from aluno;
+
+//Mostrar todos os campos do usuário Maria Clara
+
+select * from aluno where nome = "Maria Clara";
+
+//Mostrar telefone do usuário Maria
+
+select telefone from aluno where nome = "Maria";
+
+//Mostrar nome e telefone do usuário com id 1
+
+select nome, telefone from aluno where idAluno = 1;
+
+// Mostrar a tabela em ordem decrescente de acordo com o nome
+
+select * from aluno order by nome desc;
+
+// Mostra em ordem crescente
+
+select * from aluno order by nome;
+
+
+-DELETAR-------------------------------------
+
+
+// deletar todos os campos da tabela
+
+Delete from alunos;
+
+//deletar o usuário com id 3
+
+Delete from alunos where idAluno = 3;
+
+
+-ALTERAR---------------------------------------
+
+
+// alterar campos
+
+Update alunos set nome = "Jose Afranio " where idAluno = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
